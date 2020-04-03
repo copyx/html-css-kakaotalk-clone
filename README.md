@@ -1,1 +1,3 @@
-# html-css-kakaotalk-clone
+# kakaotalk-clone
+
+Cloning kakaotalk using html and css.
