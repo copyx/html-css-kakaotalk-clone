@@ -158,6 +158,12 @@ Content | Padding | Border | Margin
 
 ### Display
 
+```css
+.class{
+    display: block;
+}
+```
+
 #### Block
 
 요소의 옆에 아무 것도 허용하지 않음. 요소의 크기와 상관없음. 디폴트 설정. 폭, 높이가 존재함.
@@ -169,6 +175,30 @@ Content | Padding | Border | Margin
 #### Inline
 
 블록이나 박스가 아닌 텍스트처럼 적용이됨. 요소의 컨텐츠 크기만큼만 적용됨. 블록처럼 따로 크기를 설정할 수 없음.
+
+### Position
+
+```css
+#id{
+    position: fixed;
+}
+```
+
+#### Static
+
+기본적인 포지션 말 그대로 정적인 포지션으로 페이지 내 정해진 위치에 고정. 스크롤하면 스크롤하는대로 올라감.
+
+#### Fixed
+
+페이지가 아닌 스크린에 고정되는 포지션. 스크롤해도 화면의 해당 위치에 고정되서 따라옴.
+
+#### Relative
+
+Absolute 포지션의 기준이 되는 포지션. 단, Absolute 포지션이 설정된 태그의 부모이거나 조상이어야만 기준으로 역할함.
+
+#### Absolute
+
+Relative 포지션을 기준으로 위치하는 포지션. 부모나 조상 중 Relative 포지션이 없으면 body 태그를 기준으로 위치함.
 
 ## 기타 궁금증
 

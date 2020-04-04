@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline Example</title>
+    <title>Position Example</title>
     <style>
-        .box{
+        body,html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 400%;
             background-color: slateblue;
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
-            display: inline-block;
+        }
+        /* Position Fixed
+        #boxOne{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            position: static;
+        }
+        #boxTwo{
+            height: 300px;
+            width: 100%;
+            background-color: brown;
+            position: fixed;
+            bottom: 10px;
+            right: 0;
+            left: 200px;
+        }
+        */
+        .abs-box{
+            width: 300px;
+            height: 300px;
+            background-color: coral;
+            /* position: relative; */
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .rel-box{
+            width: 400px;
+            height: 400px;
+            background-color: cornsilk;
+            position: relative;
         }
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <!-- Position Fixed
+    <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div> 
+    -->
+    <div class="rel-box">
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+    </div>
 </body>
 </html>
