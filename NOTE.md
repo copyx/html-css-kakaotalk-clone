@@ -66,11 +66,56 @@
 유저에게 보이는 정보. Contents
 ---
 
-CSS
+## CSS(Cascading Style Sheets)
 
-Cascading Style Sheets
+각 요소들이 어떻게 생겨야하는지 브라우저에게 알려주는 역할. (색깔, 모양, 크기 등)
 
-각 요소들이 어떻게 생겨야하는지 브라우저에게 알려주는 언어. 색깔, 모양, 크기 등
+HTML = 마킹 | CSS = 디자인
 
-HTML = 마킹
-CSS = 디자인
+### CSS 작성법
+
+```css
+selector{
+    property: value;
+}
+
+h1{
+    background-color: #112233;
+}
+```
+
+#### 선택자(Selector)
+
+스타일을 적용할 대상을 지정하는 요소. 주로 세 가지를 이용함.
+
+- Tag : `tag{}`
+- Class : `.class{}`
+- ID : `#id{}`
+
+위 세 가지를 복합해서 사용할 수 있으며, 이 외에도 자식, 인접 등 다양한 선택자들이 있음.
+
+[CSS Selectors Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+
+### CSS 적용 방법
+
+HTML 파일 내에 작성하는 방법과 HTML 파일 외부에 작성하고 이를 연결하는 방식이 있음.
+
+#### HTML 파일 내 작성
+
+`<head>` 태그 안에 `<style>` 태그로 CSS 선언 가능. 해당 페이지에 적용됨. 다만, HTML 문서마다 모두 따로 관리해야하는 불편함이 있음.
+
+#### HTML 파일 밖에 작성(feat styles.css)
+
+`styles.css` 처럼 `css` 확장자로 파일을 만들고 그 안에 CSS 선언. 이 파일은 HTML 문서의 헤더에서 `<link>` 태그로 연결 가능.
+
+```html
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+```
+
+파일을 분리해서 관리하기 때문에 페이지마다 관리할 필요가 없어서 편함.
+
+## 기타 궁금증
+
+HTML과 CSS는 언어인가?
