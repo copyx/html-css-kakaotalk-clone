@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Jingi Kim">
-        <meta name="description" content="Welcome to my Kakaotalk-clone">
-        <title>CSS 기초</title>
-        <style>
-            body{
-                background-color: cornflowerblue;
-            }
-        </style>
-        <!-- HTML 파일이 여러개인 경우 관리가 힘들어짐. 근데 보통 여러개임.-->
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Big title</h1>
-        <header>It is header</header>
-        <section>This is difficult section.</section>
-        <div>박스, 컨테이너 역할을 많이하마.</div>
-        <span>텍스트를 위한 컨테이너</span>
-        <h6>Small title</h6>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body,html{
+            padding: 0;
+            margin: 0;
+            background-color: darkslategrey;
+            height: 100%;
+        }
+        .box{
+            background-color: darkgoldenrod;
+            width: 50%;
+            height: 50%;
+            /* padding-top: 50px;
+            padding-left: 50px;
+            margin-top: 50px;
+            margin-left: 50px; */
+            /* padding: 50px; */
+            padding: 20px 0px 50px 30px;
+            margin: 50px 20px 30px 40px;
+        }
+        .inside-box{
+            background-color: greenyellow;
+            width: 50%;
+            height: 50%;
+            /* border-width: 5px;
+            border-color: red;
+            border-style: dashed; */
+            border: 5px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inside-box"></div>
+    </div>
+</body>
 </html>

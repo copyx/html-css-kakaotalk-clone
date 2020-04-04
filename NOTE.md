@@ -116,6 +116,46 @@ HTML 파일 내에 작성하는 방법과 HTML 파일 외부에 작성하고 이
 
 파일을 분리해서 관리하기 때문에 페이지마다 관리할 필요가 없어서 편함.
 
+### Box Model
+
+많은 요소들이 박스 모델로 되어있음.
+
+```
+Content | Padding | Border | Margin
+```
+
+어떤 요소를 만들면 사각형 Box 모양으로 공간을 차지하게됨. 이 박스의 테두리가 Border, 테두리 안쪽 간격을 Padding, 테두리 바깥쪽 간격을 Margin 이라고 함.
+
+#### Padding, Margin 설정 방법
+
+```css
+.box{
+    /* 방향별로 각각 적용 */
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* 모든 방향 한꺼번에 적용 */
+    padding: 50px; 
+    /* 한 프로퍼티에서 방향별로 각각 적용. 상하좌우 순서. */
+    padding: 20px 0px 50px 30px;
+    margin: 50px 20px 30px 40px;
+}
+```
+
+#### Border 설정 방법
+
+```css
+.inside-box{
+    /* 보더 속성별로 설정 */
+    border-width: 5px;
+    border-color: red;
+    border-style: dashed;
+    /* 한 프로퍼티에서 한 꺼번에 설정 */
+    border: 5px dashed red;
+}
+```
+
 ## 기타 궁금증
 
 HTML과 CSS는 언어인가?
