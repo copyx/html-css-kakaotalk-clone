@@ -334,6 +334,20 @@ div ~ p {
 }
 ```
 
+[transition property - MDN](https://developer.mozilla.org/ko/docs/Web/CSS/transition)
+
+### Transformations
+
+요소 모양이나 크기, 방향 등 좌표공간을 변환하는 효과.
+
+```css
+.box {
+    transform: 
+}
+```
+
+[transform property - MDN](https://developer.mozilla.org/ko/docs/Web/CSS/transform)
+
 ## 기타 궁금증
 
 HTML과 CSS는 언어인가?

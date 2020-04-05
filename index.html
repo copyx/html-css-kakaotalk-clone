@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transitions</title>
+    <title>Transformations</title>
     <style>
         .box {
-            background-color: green;
-            color: white;
-            font-size: 40px;
-            transition: all 0.5s ease-in-out;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transition: transform 1.5s ease-in-out;
         }
         .box:hover {
-            background-color: royalblue;
-            color: black;
+            transform: rotate(20turn) scale(2);
         }
     </style>
 </head>
 <body>
-    <span class="box">
-        Text
-    </span>
+    <div class="box"></div>
 </body>
 </html>
