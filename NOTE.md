@@ -377,6 +377,23 @@ div ~ p {
 }
 ```
 
+[animation property - MDN](https://developer.mozilla.org/ko/docs/Web/CSS/animation)
+
+### Media Queries
+
+다양한 기기의 환경에 맞춰 보여줄 수 있도록 스크린 크기에 따라 다른 스타일을 적용시킬 수 있도록 도와줌.
+
+```css
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    body {
+        background-color: slateblue;
+    }
+}
+```
+
+- [Media Queries - MDN](https://developer.mozilla.org/ko/docs/Web/CSS/Media_Queries)
+- [@media - MDN](https://developer.mozilla.org/ko/docs/Web/CSS/@media)
+
 ## 기타 궁금증
 
 HTML과 CSS는 언어인가?
