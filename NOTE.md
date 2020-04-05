@@ -323,6 +323,17 @@ div ~ p {
 > 예시)
 > 요소의 첫 글자, 첫 줄
 > 요소의 컨텐츠 전, 후 등
+
+### Transitions
+
+요소의 상태 변화 시 두 상태간의 전환을 정의하는 것.
+
+```css
+.box {
+    transition: target duration timing-function delay;
+}
+```
+
 ## 기타 궁금증
 
 HTML과 CSS는 언어인가?
