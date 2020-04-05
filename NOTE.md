@@ -342,11 +342,40 @@ div ~ p {
 
 ```css
 .box {
-    transform: 
+    transform: transform-functions;
 }
 ```
 
 [transform property - MDN](https://developer.mozilla.org/ko/docs/Web/CSS/transform)
+
+### Animations
+
+애니메이션을 정의해놓고 이를 적용할 수 있음.
+
+```css
+.box {
+    animation: animation-name 1.5 infinite ease-in-out;
+}
+
+@keyframes animationname {
+    /* from {
+        transform: none;
+    }
+    to {
+        transform: rotate(1turn) scale(.5, .5);
+    } */
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotate(1turn) scale(.5, .5);
+        background-color: royalblue;
+    }
+    100% {
+        transform: none;
+    }
+}
+```
 
 ## 기타 궁금증
 

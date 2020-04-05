@@ -9,10 +9,25 @@
             width: 50px;
             height: 50px;
             background-color: red;
-            transition: transform 1.5s ease-in-out;
+            animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
         }
-        .box:hover {
-            transform: rotate(20turn) scale(2);
+        @keyframes scaleAndRotateSquare {
+            /* from {
+                transform: none;
+            }
+            to {
+                transform: rotate(1turn) scale(.5, .5);
+            } */
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: rotate(1turn) scale(.5, .5);
+                background-color: royalblue;
+            }
+            100% {
+                transform: none;
+            }
         }
     </style>
 </head>
