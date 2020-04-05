@@ -246,10 +246,83 @@ Flex는 **진행축(main axis)과 교차축(cross axis) 개념**이 있음. 진�
 
 아이템의 순서를 설정하는 프로퍼티. 기본 0. 양수, 음수 모두 설정 가능.
 
-####
-
 [Flexbox 공부용 코드게임 - 이거 좋음!](http://flexboxfroggy.com/)
 
+### Selectors and Psuedo Selectors
+
+#### 속성 선택자(Attribute Selector)
+
+HTML 요소들의 속성을 이용해 선택.
+
+- `a[attribute]{}` : 속성이 있으면 모두 선택
+- `a[attribute="value"]{}` : 속성값이 문자열이면 선택
+- `a[attribute~="value"]` : 속성값이 문자열을 포함하면 선택(스페이스로 구분된 단어 기준)
+- `a[attribute|="value"]` : 속성값이 문자열로 시작하면 선택(단어 전체이거나 하이픈(-)으로 구분)
+- `a[attribute^="value"]` : 속성값이 문자열로 시작하면 선택
+- `a[attribute$="value"]` : 속성값이 문자열로 끝나면 선택
+- `a[attribute*="value"]` : 속성값이 문자열을 포함하면 선택
+
+#### 결합자(Combinators)
+
+선택자 간의 관계를 설명하는 것
+
+##### 자손 선택자(Descendant Selector)
+
+명시된 요소의 자손(직계 자식이 아닌 몇 단계를 거치든)인 모든 요소를 선택.
+
+```css
+div p {
+    background-color: green;
+}
+```
+
+##### 자식 선택자(Child Selector)
+
+명시된 요소의 직계 자식인 모든 요소를 선택.
+
+```css
+div > p {
+    background-color: green;
+}
+```
+
+##### 인접 자매 선택자(Adjacent Sibling Selector)
+
+명시된 요소와 같은 부모를 갖고, 바로 다음에 따라오는 요소를 선택.
+
+```css
+div + p {
+    background-color: green;
+}
+```
+
+##### 일반 자매 선택자(General Sibling Selector)
+
+명시된 요소와 같은 부모를 갖는 요소를 선택
+
+
+```css
+div ~ p {
+    background-color: green;
+}
+```
+
+#### Pseudo Classes
+
+요소의 특별한 상태를 정의하는데 사용
+
+> 예시)
+> 요소에 마우스 오버된 상태
+> 형제 요소들 중 마지막일 때
+> 현재 요소에 포커스가 잡혔을 때 등
+
+#### Pseudo Elements
+
+요소의 특정한 일부분에 스타일을 적용할 때 사용
+
+> 예시)
+> 요소의 첫 글자, 첫 줄
+> 요소의 컨텐츠 전, 후 등
 ## 기타 궁금증
 
 HTML과 CSS는 언어인가?
