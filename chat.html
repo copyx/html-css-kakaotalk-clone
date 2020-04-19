@@ -10,7 +10,7 @@
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="chat-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">12:42</span>
@@ -23,6 +23,7 @@
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
+    <!-- TODO: header 고정하기는 숙제! -->
     <header class="header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-btn">
@@ -39,7 +40,7 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Sunday, April 12, 2020</span>
         <li class="incomming-message message">
@@ -48,15 +49,66 @@
             class="g-avatar message__avatar"
           />
           <div class="message__content">
+            <span class="message__bubble">뭐하냐 시키야</span>
             <span class="message__author">Best Friend</span>
-            <div class="message__bubble">뭐하냐 시키야</div>
           </div>
           <span class="message__timestamp">18:59</span>
         </li>
-        <li class="incomming-message message">
-          <span class="message__timestamp">18:59</span>
+        <li class="sent-message message">
+          <span class="message__timestamp">19:01</span>
           <div class="message__content">
-            <div class="message__bubble">공부한다 임뫄</div>
+            <span class="message__bubble">공부한다 임뫄</span>
+          </div>
+        </li>
+        <li class="incomming-message message">
+          <img
+            src="images/jingi_avatar.jpeg"
+            class="g-avatar message__avatar"
+          />
+          <div class="message__content">
+            <span class="message__bubble">뭐하냐 시키야</span>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <span class="message__timestamp">18:59</span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp">19:01</span>
+          <div class="message__content">
+            <span class="message__bubble">공부한다 임뫄</span>
+          </div>
+        </li>
+        <li class="incomming-message message">
+          <img
+            src="images/jingi_avatar.jpeg"
+            class="g-avatar message__avatar"
+          />
+          <div class="message__content">
+            <span class="message__bubble">뭐하냐 시키야</span>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <span class="message__timestamp">18:59</span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp">19:01</span>
+          <div class="message__content">
+            <span class="message__bubble">공부한다 임뫄</span>
+          </div>
+        </li>
+        <li class="incomming-message message">
+          <img
+            src="images/jingi_avatar.jpeg"
+            class="g-avatar message__avatar"
+          />
+          <div class="message__content">
+            <span class="message__bubble">뭐하냐 시키야</span>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <span class="message__timestamp">18:59</span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp">19:01</span>
+          <div class="message__content">
+            <span class="message__bubble">공부한다 임뫄</span>
           </div>
         </li>
       </ul>
