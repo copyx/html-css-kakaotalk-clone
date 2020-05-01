@@ -1,3 +1,3 @@
-# Kokoa Clone
+# Kakaotalk Clone
 
 Cloning kakaotalk using html and css.
