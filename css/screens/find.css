@@ -1,8 +1,8 @@
 .recommended-friends {
   margin: 25px 0px;
   padding: 25px 0px;
-  border-top: 1px solid var(--devider-color);
-  border-bottom: 1px solid var(--devider-color);
+  border-top: var(--divider-border);
+  border-bottom: var(--divider-border);
 }
 
 .recommended-friends__title {
