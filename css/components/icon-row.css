@@ -1,0 +1,26 @@
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 18px;
+}
+
+.icon-row__id-icon {
+  font-weight: 600;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 7px;
+}
